@@ -1,0 +1,14 @@
+{
+  "firstName": "Jane",
+  "lastName": "Doe",
+  "age": 25,
+  "isAdult": true,
+  "socialNetworks": [
+    "Instagram",
+    "Twitter"
+  ],
+  "contacts": {
+    "phoneNumber": "89998887766",
+    "email": "janedoe@test.com"
+  }
+}

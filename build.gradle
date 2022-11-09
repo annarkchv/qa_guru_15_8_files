@@ -1,0 +1,29 @@
+plugins {
+    id 'java'
+}
+
+group 'guru.qa'
+version '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation (
+            'org.apache.logging.log4j:log4j-core:2.19.0',
+            'org.junit.jupiter:junit-jupiter:5.9.0',
+            'com.codeborne:selenide:6.9.0',
+            'org.assertj:assertj-core:3.23.1',
+            'com.codeborne:pdf-test:1.7.0',
+            'com.codeborne:xls-test:1.4.3', // версия именно эта, чтобы не было конфликта org.apache.poi c библиотекой pdf
+            'com.opencsv:opencsv:5.7.1',
+            'com.google.code.gson:gson:2.10',
+            'commons-io:commons-io:2.11.0',
+            'com.fasterxml.jackson.core:jackson-databind:2.13.4'
+    )
+}
+
+test {
+    useJUnitPlatform()
+}
